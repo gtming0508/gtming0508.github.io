@@ -1,19 +1,35 @@
-*{
+* {
 	margin: 0;
 	padding: 0;
 	list-style: none;
 }
-html,body{
+
+html,
+body {
 	width: 100%;
 	height: 100%;
 }
-canvas{display:block}.block-audio{display:none}body{padding:0;margin:0}
-.wrap{
+
+canvas {
+	display: block
+}
+
+.block-audio {
+	display: none
+}
+
+body {
+	padding: 0;
+	margin: 0
+}
+
+.wrap {
 	height: 100%;
 	padding: 100px;
 }
-.font{
-	color:#000;
+
+.font {
+	color: #000;
 	font-family: "Microsoft YaHei";
 	text-shadow: -2px 0 rgba(0, 255, 255, .5), 2px 0 rgba(255, 0, 0, .5);
 	font-size: 100px;
@@ -22,17 +38,20 @@ canvas{display:block}.block-audio{display:none}body{padding:0;margin:0}
 }
 
 
-@keyframes shake-it{
-	0%{
-			text-shadow: 0 0 rgba(0, 255, 255, .5), 0 0 rgba(255, 0, 0, .5);
+@keyframes shake-it {
+	0% {
+		text-shadow: 0 0 rgba(0, 255, 255, .5), 0 0 rgba(255, 0, 0, .5);
 	}
-	25%{
-			text-shadow: -2px 0 rgba(0, 255, 255, .5), 2px 0 rgba(255, 0, 0, .5);
+
+	25% {
+		text-shadow: -2px 0 rgba(0, 255, 255, .5), 2px 0 rgba(255, 0, 0, .5);
 	}
-	50%{
-			text-shadow: -5px 0 rgba(0, 255, 255, .5), 3px 0 rgba(255, 0, 0, .5);
+
+	50% {
+		text-shadow: -5px 0 rgba(0, 255, 255, .5), 3px 0 rgba(255, 0, 0, .5);
 	}
-	100%{
-			text-shadow: 3px 0 rgba(0, 255, 255, .5), 5px 0 rgba(255, 0, 0, .5);
+
+	100% {
+		text-shadow: 3px 0 rgba(0, 255, 255, .5), 5px 0 rgba(255, 0, 0, .5);
 	}
 }
