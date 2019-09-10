@@ -1,0 +1,217 @@
+@import './reset.css';
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+body{
+  position: relative;
+}
+
+.submit {
+  height: 100%;
+  min-height: 6.67rem;
+  background-image: url('../images/submit_bg_2x-min.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: auto 100%;
+  box-sizing: border-box;
+  .title {
+    font-size: 0.24rem;
+    padding-top: 1.36rem;
+    padding-bottom: 0.6rem;
+    text-align: center;
+    color: #FFFFFF;
+    letter-spacing: 0;
+  }
+
+  .form {
+    width: 80%;
+    margin: 0 auto;
+    // overflow: hidden;
+
+    .inp {
+      margin-bottom: 0.1rem;
+      position: relative;
+      padding: 2px;
+      input {
+        width: 100%;
+        border: 0;
+        height: 0.45rem;
+        border-radius: 0.05rem;
+        outline: none;
+        font-size: 0.14rem;
+        border: 1px solid #999999;
+        letter-spacing: 0;
+        line-height: 1.2;
+        text-indent: 0.5em;
+        box-sizing: border-box;
+        &:focus {
+          border-color: #66afe9;
+          outline: 0;
+          -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, .075), 0 0 8px rgba(20, 116, 195, 0.8);
+          box-shadow: inset 0 1px 2px rgba(0, 0, 0, .075), 0 0 8px rgba(20, 116, 195, 0.8)
+        }
+      }
+      .close{
+        right: 0.13rem;
+        top: 0;
+        bottom: 0;
+        margin: auto 0;
+        position: absolute;
+        width: 0.2rem;
+        height: 0.2rem;
+        background: url('../images/close_icon@2x.png') no-repeat center center;
+        background-size: 100%;
+        z-index: 10;
+      }
+      select {
+        font-size: 0.14rem;
+        width: 100%;
+        height: 0.45rem;
+        border-radius: 0.05rem;
+        outline: none;
+        text-indent: 0.5em;
+        border:0;
+        border: 1px solid #999999;
+        appearance: none;
+        -moz-appearance: none;
+        -webkit-appearance: none;
+        &:focus {
+          outline: none;
+          border-color: #66afe9;
+          outline: 0;
+          -webkit-box-shadow: inset 1px 1px 2px rgba(0, 0, 0, .075), 0 0 8px rgba(20, 116, 195, 0.8);
+          box-shadow: inset 1px 1px 2px rgba(0, 0, 0, .075), 0 0 8px rgba(20, 116, 195, 0.8);
+        }
+        option {
+          padding-left: 0.5em;
+          width: 100%;
+          height: 0.3rem;
+          text-indent: 0.5em;
+          background: #FFFFFF;
+          outline: none;
+        }
+      }
+      .errorInp {
+        border-color: #f00;
+        outline: 0;
+        -webkit-box-shadow: inset 0 0px 3px rgba(189, 14, 14, 0.075), 0 0 3px rgba(224, 16, 16, 0.8);
+        box-shadow: inset 0 0px 3px rgba(189, 14, 14, 0.075), 0 0 3px rgba(224, 16, 16, 0.8);
+      }
+      .arrow {
+        right: 0.17rem;
+        top: 0;
+        bottom: 0;
+        margin: auto 0;
+        position: absolute;
+        width: 0.14rem;
+        height: 0.08rem;
+        background: url('../images/arrow_2x.png') no-repeat center center;
+        background-size: 100%;
+        z-index: 10;
+      }
+    }
+
+    .code {
+      width: 100%;
+
+      .inp {
+        margin: 0;
+        width: 1.82rem;
+        display: inline-block;
+      }
+
+      display: inline-block;
+
+      .code_btn {
+        font-size: 0.14rem;
+        color: #FFFFFF;
+        float: right;
+        width: 1.08rem;
+        height: 0.45rem;
+        border: 0;
+        margin-top: 2px;
+        border-radius: 0.03rem;
+        background: linear-gradient(#00BDFF, #006EF4);
+        outline: none;
+
+        &:active {
+          background: linear-gradient(#006EF4, #00BDFF);
+          border: 0;
+        }
+      }
+
+      .disabled {
+        pointer-events: none;
+        cursor: not-allowed;
+        -webkit-box-shadow: none;
+        box-shadow: none;
+        background: #FFFFFF;
+        color: #999999;
+      }
+    }
+    .submit_btn {
+      display: block;
+      width: 100%;
+      height: 0.46rem;
+      margin-top: 0.3rem;
+      background-image: linear-gradient(180deg, #00BDFF 0%, #006EF4 100%);
+      border-radius: 6px;
+      border-radius: 6px;
+      border:0;
+      outline: none;
+      font-size: 0.18rem;
+      color: #FFFFFF;
+      letter-spacing: 0;
+      line-height: 1;
+      text-align: center;
+      &:active {
+        background: linear-gradient(180deg,  #006EF4 0%,#00BDFF 100%);
+        border: 0;
+      }
+    }
+  }
+}
+.mask{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top:0;
+  left: 0;
+  background: rgba(0, 0, 0, .1);
+  z-index: 100;
+  .mask_wrap{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    .msg {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 70%;
+      min-height: 0.5rem;
+      background: rgba(0, 0, 0, 0.8);
+      z-index: 110;
+      padding: 0.1rem;
+      text-align: center;
+      font-size: 0.14rem;
+      color: #FFFFFF;
+      letter-spacing: 0;
+      line-height: 1.2;
+      border-radius: 5px;
+      display: table;
+      .message{
+        display: table-cell;
+        vertical-align: middle;
+        span{
+          text-align: left;
+          display: inline-block;
+        }
+      }
+    }
+  }
+  
+}
