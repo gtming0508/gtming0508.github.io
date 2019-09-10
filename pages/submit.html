@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="./style/submit.css">
+</head>
+<script>
+  document.documentElement.style.fontSize = window.innerWidth / 375 * 100 + 'px'
+  window.onresize = function () {
+    document.documentElement.style.fontSize = window.innerWidth / 375 * 100 + 'px'
+  };
+</script>
+
+<body>
+  <div class="submit">
+    <h6 class="title">让我们开始管理汇率风险</h6>
+    <div class="form">
+      <div class="inp">
+        <input type="text" id="enterpriseName" placeholder="请输入企业名称">
+        <i class="close"></i>
+      </div>
+      <div class="inp">
+        <select name="" id="select">
+          <option value="">请选择</option>
+          <option value="1">汇率风险管理顾问服务</option>
+          <option value="3">汇率风险测算</option>
+          <option value="2">跨境支付咨询</option>
+        </select>
+        <i class="icon arrow"></i>
+      </div>
+      <div class="inp">
+        <input class="" type="text" id="phoneNumber" value="16601230508" maxlength="11" placeholder="请输入你的手机号">
+      </div>
+      <div class="code">
+        <div class="inp">
+          <input type="text" id="code" placeholder="输入验证码">
+        </div>
+        <button class="code_btn disabled">发送验证码</button>
+      </div>
+      <div>
+        <button class="submit_btn">提交需求</button>
+      </div>
+    </div>
+    
+  </div>
+  <!-- <div class="mask">
+      <div class="mask_wrap">
+        <div class="msg">
+          <span class="message"><span>请输入正确的手机号！</span></span>
+        </div>
+      </div>
+    </div> -->
+  <script src="./js/jquery-1.8.3.min.js"></script>
+  <script src="./js/form.js"></script>
+</body>
+
+</html>

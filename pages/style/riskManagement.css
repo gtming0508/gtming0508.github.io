@@ -1,0 +1,151 @@
+@import 'reset.css';
+.riskManagement .banner {
+  width: 100%;
+  height: 4.44rem;
+  background-image: url('../images/riskMeasurement/aqa-min.png');
+  background-repeat: no-repeat;
+  background-size: auto 100%;
+  background-position: center;
+}
+.riskManagement .banner .title {
+  padding-top: 1.46rem;
+  font-size: .26rem;
+  color: #FFFFFF;
+  letter-spacing: 0.023rem;
+  line-height: 1;
+  text-align: center;
+}
+.riskManagement .banner .describe {
+  width: 80%;
+  padding-top: 0.3rem;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 0.12rem;
+  color: #FFFFFF;
+  letter-spacing: 0;
+  line-height: 0.23rem;
+}
+.riskManagement .banner .describe span {
+  display: inline-block;
+  text-align: left;
+}
+.riskManagement .serve .title {
+  padding-top: 0.4rem;
+  padding-bottom: 0.27rem;
+  text-align: center;
+  font-size: 0.18rem;
+  color: #333333;
+  letter-spacing: 0;
+  line-height: 0.18rem;
+}
+.riskManagement .serve .serve_wrap::after {
+  width: 0;
+  height: 0;
+  content: '';
+  display: block;
+  clear: both;
+}
+.riskManagement .serve .serve_wrap li {
+  width: 33%;
+  height: 1.1rem;
+  float: left;
+  padding: 0 0.05rem;
+  text-align: center;
+}
+.riskManagement .serve .serve_wrap li img {
+  margin: 0 auto;
+  width: 0.5rem;
+  height: 0.5rem;
+  display: block;
+  margin-bottom: 0.06rem;
+}
+.riskManagement .serve .serve_wrap li span {
+  display: inline-block;
+  font-size: 0.1rem;
+  color: #333333;
+  letter-spacing: 0;
+  line-height: 1.2;
+}
+.riskManagement .target .title {
+  padding-top: 0.2rem ;
+  padding-bottom: 0.4rem ;
+  font-size: 0.18rem;
+  color: #333333;
+  letter-spacing: 0;
+  line-height: 1.2;
+  text-align: center;
+}
+.riskManagement .target .target_list {
+  background: #FFFFFF;
+  padding: 0 0.06rem;
+  box-sizing: border-box;
+}
+.riskManagement .target .target_list::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+.riskManagement .target .target_list li {
+  float: left;
+  width: 1.65rem;
+  height: 2.5rem;
+  box-shadow: 0 0 30px rgba(200, 200, 200, 0.5);
+  margin: 0.1rem 0.08rem;
+  border-radius: 0.1rem;
+  text-align: center;
+}
+.riskManagement .target .target_list li img {
+  width: 100%;
+}
+.riskManagement .target .target_list li span {
+  padding: 0.16rem 0.1rem 0 ;
+  display: inline-block;
+  text-align: left;
+  font-size: 0.12rem;
+  color: #333333;
+  letter-spacing: 0;
+  line-height: 0.16rem;
+}
+.riskManagement .serve_perform .title {
+  text-align: center;
+  font-size: 0.18rem;
+  color: #333333;
+  letter-spacing: 0;
+  line-height: 1;
+  padding: .5rem 0 0.3rem 0;
+}
+.riskManagement .serve_perform img {
+  width: 3.34rem;
+  display: block;
+  margin: 0 auto;
+  box-shadow: 0 0 30px rgba(200, 200, 200, 0.5);
+}
+.riskManagement .btn {
+  margin: 0.4rem 0;
+}
+.riskManagement .btn button {
+  display: block;
+  margin: 0 auto;
+  border-radius: 0.07rem;
+  width: 80%;
+  height: 0.44rem;
+  background: linear-gradient(#00BDFF, #006EF4);
+  border: 0;
+  font-size: 0.18rem;
+  color: #FFFFFF;
+  letter-spacing: 0;
+  line-height: 1;
+}
+.riskManagement .footer {
+  margin: 0.6rem 0 0.4rem 0;
+  text-align: center;
+}
+.riskManagement .footer img {
+  width: 1.18rem;
+}
+.riskManagement .footer div {
+  padding-top: 0.17rem;
+  font-size: 0.14rem;
+  color: #333333;
+  letter-spacing: 0;
+}
